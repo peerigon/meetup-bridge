@@ -1,0 +1,31 @@
+{
+  "name": "meetup-bridge",
+  "version": "1.0.0",
+  "description": "Bridging the meetup API to show events on our webpage - https://peerigon.com",
+  "main": "app/index.js",
+  "scripts": {
+    "start": "node app/index.js",
+    "dev": "nodemon app/index.js",
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "Meetup",
+    "Peerigon",
+    "Nodeschool"
+  ],
+  "author": "Markus Dobmann <markus.dobmann@peerigon.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^2.0.0",
+    "got": "^6.5.0",
+    "hapi": "^15.1.1",
+    "lodash.pick": "^4.4.0",
+    "query-string": "^4.2.3"
+  },
+  "devDependencies": {
+    "eslint": "^3.7.1",
+    "eslint-config-peerigon": "^6.0.0",
+    "eslint-plugin-jsdoc": "^2.3.1",
+    "nodemon": "^1.11.0"
+  }
+}

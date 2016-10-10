@@ -1,0 +1,10 @@
+{
+  "extends": ["peerigon"],
+  "rules": {
+    "indent": ["error", 2],
+    "quotes": ["error", "single"]
+  },
+  "env": {
+    "node": true
+  }
+}
