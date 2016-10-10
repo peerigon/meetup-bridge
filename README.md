@@ -1,6 +1,8 @@
 # meetup-bridge
 Bridging the meetup API to show events on our webpage - https://peerigon.com
 
+[![Build Status](https://travis-ci.org/peerigon/meetup-bridge.svg?branch=master)](https://travis-ci.org/peerigon/meetup-bridge) [![dependencies Status](https://david-dm.org/peerigon/meetup-bridge/status.svg)](https://david-dm.org/peerigon/meetup-bridge) [![devDependencies Status](https://david-dm.org/peerigon/meetup-bridge/dev-status.svg)](https://david-dm.org/peerigon/meetup-bridge?type=dev)
+
 ## Configuration
 
 Create a `.env` file which contains the two essential parameters `API_KEY` and `PORT`. Like so:
