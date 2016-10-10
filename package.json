@@ -4,7 +4,7 @@
   "description": "Bridging the meetup API to show events on our webpage - https://peerigon.com",
   "main": "app/index.js",
   "scripts": {
-    "start": "node app/index.js",
+    "start": "NODE_ENV=production node app/index.js",
     "dev": "nodemon app/index.js",
     "lint": "eslint ."
   },
