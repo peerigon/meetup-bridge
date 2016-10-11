@@ -5,7 +5,7 @@ Bridging the meetup API to show events on our webpage - https://peerigon.com
 
 ## Configuration
 
-Create a `.env` file which contains the two essential parameters `API_KEY` and `PORT`. Like so:
+Create a `.env` file which contains the two required parameters `API_KEY` and `PORT`. Like so:
 
 ```
 // .env
