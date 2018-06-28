@@ -6,26 +6,35 @@
   "scripts": {
     "start": "NODE_ENV=production node app/index.js",
     "dev": "nodemon app/index.js",
-    "lint": "eslint ."
+    "lint": "eslint . --fix"
   },
   "keywords": [
     "Meetup",
     "Peerigon",
     "Nodeschool"
   ],
-  "author": "Markus Dobmann <markus.dobmann@peerigon.com>",
+  "contributors": [
+    {
+      "name": "Carsten Meier",
+      "email": "carsten.meier@peerigon.com"
+    },
+    {
+      "name": "Markus Dobmann",
+      "email": "hello@peerigon.com>"
+    }
+  ],
   "license": "MIT",
   "dependencies": {
-    "dotenv": "^2.0.0",
-    "got": "^6.5.0",
+    "dotenv-safe": "^6.0.0",
+    "got": "^8.3.1",
     "hapi": "^17.0.0",
     "lodash.pick": "^4.4.0",
-    "query-string": "^4.2.3"
+    "query-string": "^6.1.0"
   },
   "devDependencies": {
-    "eslint": "^3.7.1",
-    "eslint-config-peerigon": "^6.0.0",
-    "eslint-plugin-jsdoc": "^2.3.1",
+    "eslint": "^5.0.1",
+    "eslint-config-peerigon": "^13.0.0",
+    "eslint-plugin-jsdoc": "^3.7.1",
     "nodemon": "^1.11.0"
   }
 }

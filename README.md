@@ -1,17 +1,11 @@
 # meetup-bridge
 Bridging the meetup API to show events on our webpage - https://peerigon.com
 
-[![Build Status](https://travis-ci.org/peerigon/meetup-bridge.svg?branch=master)](https://travis-ci.org/peerigon/meetup-bridge) [![dependencies Status](https://david-dm.org/peerigon/meetup-bridge/status.svg)](https://david-dm.org/peerigon/meetup-bridge) [![devDependencies Status](https://david-dm.org/peerigon/meetup-bridge/dev-status.svg)](https://david-dm.org/peerigon/meetup-bridge?type=dev) [![Known Vulnerabilities](https://snyk.io/test/github/peerigon/meetup-bridge/badge.svg)](https://snyk.io/test/github/peerigon/meetup-bridge)
+[![dependencies Status](https://david-dm.org/peerigon/meetup-bridge/status.svg)](https://david-dm.org/peerigon/meetup-bridge) [![devDependencies Status](https://david-dm.org/peerigon/meetup-bridge/dev-status.svg)](https://david-dm.org/peerigon/meetup-bridge?type=dev) [![Known Vulnerabilities](https://snyk.io/test/github/peerigon/meetup-bridge/badge.svg)](https://snyk.io/test/github/peerigon/meetup-bridge)
 
 ## Configuration
 
-Create a `.env` file which contains the two required parameters `API_KEY` and `PORT`. Like so:
-
-```
-// .env
-API_KEY=<SUPER_SECURE_MEETUP_API_KEY>
-PORT=<PORT>
-```
+Create a `.env` file which contains the two required parameters `API_KEY` and `PORT`. See included `.env.example` file.
 
 ## Scripts
 

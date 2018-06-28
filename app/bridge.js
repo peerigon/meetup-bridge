@@ -1,4 +1,4 @@
-'use strict';
+/* eslint-disable import/unambiguous */
 
 const got = require('got');
 const qs = require('query-string');
@@ -14,34 +14,38 @@ const propsToPick = [
   'yes_rsvp_count',
   'venue',
   'link',
-  'description'
+  'description',
 ];
 
 function parseBody(res) {
   const data = res.body;
 
   if (!Array.isArray(data)) {
+    console.log(data);
     throw new Error('Received invalid data from the API: Expected an Array.');
   }
 
   return data.map((event) => pick(event, propsToPick));
 }
 
-function bridge(apiKey, cb) {
+async function getApiContent(url, options) {
+  const content = await got(url, options);
+
+  return content;
+}
+
+async function bridge(apiKey) {
   const query = {
     key: encodeURIComponent(apiKey),
-    sign: true
+    sign: true,
   };
-
   const url = `${EVENTS_URL}?${qs.stringify(query)}`;
   const options = {
-    json: true
+    json: true,
   };
+  const content = await getApiContent(url, options);
 
-  got(url, options)
-    .then(parseBody)
-    .then((res) => cb(null, res))
-    .catch((err) => cb(err));
+  return parseBody(content);
 }
 
 module.exports = bridge;
